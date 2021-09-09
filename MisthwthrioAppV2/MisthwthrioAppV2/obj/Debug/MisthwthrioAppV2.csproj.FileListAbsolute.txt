@@ -1,0 +1,10 @@
+C:\Users\ekal6\Desktop\MisthwthrioAPP\MisthwthrioAppV2\MisthwthrioAppV2\bin\Debug\MisthwthrioAppV2.exe.config
+C:\Users\ekal6\Desktop\MisthwthrioAPP\MisthwthrioAppV2\MisthwthrioAppV2\bin\Debug\MisthwthrioAppV2.exe
+C:\Users\ekal6\Desktop\MisthwthrioAPP\MisthwthrioAppV2\MisthwthrioAppV2\bin\Debug\MisthwthrioAppV2.pdb
+C:\Users\ekal6\Desktop\MisthwthrioAPP\MisthwthrioAppV2\MisthwthrioAppV2\obj\Debug\MisthwthrioAppV2.csproj.AssemblyReference.cache
+C:\Users\ekal6\Desktop\MisthwthrioAPP\MisthwthrioAppV2\MisthwthrioAppV2\obj\Debug\MisthwthrioAppV2.Properties.Resources.resources
+C:\Users\ekal6\Desktop\MisthwthrioAPP\MisthwthrioAppV2\MisthwthrioAppV2\obj\Debug\MisthwthrioAppV2.csproj.GenerateResource.cache
+C:\Users\ekal6\Desktop\MisthwthrioAPP\MisthwthrioAppV2\MisthwthrioAppV2\obj\Debug\MisthwthrioAppV2.csproj.CoreCompileInputs.cache
+C:\Users\ekal6\Desktop\MisthwthrioAPP\MisthwthrioAppV2\MisthwthrioAppV2\obj\Debug\MisthwthrioAppV2.exe
+C:\Users\ekal6\Desktop\MisthwthrioAPP\MisthwthrioAppV2\MisthwthrioAppV2\obj\Debug\MisthwthrioAppV2.pdb
+C:\Users\ekal6\Desktop\MisthwthrioAPP\MisthwthrioAppV2\MisthwthrioAppV2\obj\Debug\MisthwthrioAppV2.Form1.resources
