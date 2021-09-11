@@ -16,5 +16,11 @@ namespace MisthwthrioAppV2
         {
             InitializeComponent();
         }
+
+        private void createBTN_Click(object sender, EventArgs e)
+        {
+            previewForm priv = new previewForm();
+            priv.ShowDialog();
+        }
     }
 }

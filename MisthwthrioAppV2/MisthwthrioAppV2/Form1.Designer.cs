@@ -372,6 +372,7 @@ namespace MisthwthrioAppV2
             this.createBTN.TabIndex = 54;
             this.createBTN.Text = "Δημιουργία";
             this.createBTN.UseVisualStyleBackColor = true;
+            this.createBTN.Click += new System.EventHandler(this.createBTN_Click);
             // 
             // MainForm
             // 
