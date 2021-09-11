@@ -12,13 +12,22 @@ namespace MisthwthrioAppV2
 {
     public partial class previewForm : Form
     {
-        public previewForm()
+        string ekmisthwths,mOnoma,mEponymo,mToposKatoikias,mADT;
+        string mAfm;
+        public previewForm(string ekmisthwth,string onoma, string eponymo, string toposkatoikias, string adt,string afm)
         {
             InitializeComponent();
+            ekmisthwths=ekmisthwth;
+            mOnoma = onoma;
+            mEponymo = eponymo;
+            mToposKatoikias = toposkatoikias;
+            mADT = adt;
+            mAfm = afm;
         }
 
         private void priviewForm_Load(object sender, EventArgs e)
         {
+            
             AdvRichTextBox aRTB = new AdvRichTextBox();
 
 
@@ -29,8 +38,8 @@ namespace MisthwthrioAppV2
             aRTB.SelectionAlignment = TextAlign.CenterJustify;
 
             aRTB.SelectionFont = new Font("Georgia", 11, FontStyle.Regular);
-            aRTB.AppendText("Σήμερα την ……….. του μηνός ……………… του έτους ……….. στην πόλη Κομοτηνή οι υπογράφοντες το συμφωνητικό  αυτό αφενός …………………………………………και αφετέρου" +
-                          "..…………………………………..…. κάτοικος ………………………… Α.Φ.Μ …………..……..κάτοχος του υπ’αριθ. …..………..δελτίου ταυτότητας που εκδόθηκε την ………………. από το ………………… " +
+            aRTB.AppendText("Σήμερα την ……….. του μηνός ……………… του έτους ……….. στην πόλη Κομοτηνή οι υπογράφοντες το συμφωνητικό  αυτό αφενός "+ekmisthwths+" και αφετέρου ..." +
+                           mOnoma+" "+mEponymo+"... κάτοικος "+ mToposKatoikias + " Α.Φ.Μ ..."+ mAfm + "... κάτοχος του υπ’αριθ. ..."+ mADT + "... δελτίου ταυτότητας που εκδόθηκε την ………………. από το ………………… " +
                           "αποκαλούμενος στο εξής “μισθωτής”,συμφώνησαν από κοινού και αποδέχτηκαν τα εξής:\n\n");
 
             aRTB.SelectionFont = new Font("Georgia", 11, FontStyle.Bold);

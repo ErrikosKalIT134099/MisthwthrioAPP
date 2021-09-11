@@ -19,7 +19,7 @@ namespace MisthwthrioAppV2
 
         private void createBTN_Click(object sender, EventArgs e)
         {
-            previewForm priv = new previewForm();
+            previewForm priv = new previewForm(ekmisthotisCB.Text,nameTB.Text,surnameTB.Text,katoikiaMisthwthTB.Text,adtTB.Text,afmTB.Text);
             priv.ShowDialog();
         }
     }
