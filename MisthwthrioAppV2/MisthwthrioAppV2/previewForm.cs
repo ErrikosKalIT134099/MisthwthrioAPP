@@ -13,10 +13,10 @@ namespace MisthwthrioAppV2
     public partial class previewForm : Form
     {
         string ekmisthwths,mOnoma,mEponymo,mToposKatoikias,mADT;
-        string mAfm,adress,city,floor,useM,datepick;
+        string mAfm,adress,city,floor,useM,datepick,startM,endM;
         double tetMetra;
-        int misthwma,guaranty;
-        public previewForm(string ekmisthwth,string onoma, string eponymo, string toposkatoikias, string adt,string afm,string dieuf,string polh,string orof,int misth,int egguhsh,string xrhsh,double tm,string date)
+        int misthwma,guaranty,eth;
+        public previewForm(string ekmisthwth, string onoma, string eponymo, string toposkatoikias, string adt, string afm, string dieuf, string polh, string orof, int misth, int egguhsh, string xrhsh, double tm, string date, int years,string start,string end)
         {
             InitializeComponent();
             ekmisthwths=ekmisthwth;
@@ -33,6 +33,9 @@ namespace MisthwthrioAppV2
             useM = xrhsh;
             tetMetra = tm;
             datepick = date;
+            eth = years;
+            startM = start;
+            endM = end;
         }
 
         private void priviewForm_Load(object sender, EventArgs e)
@@ -71,7 +74,7 @@ namespace MisthwthrioAppV2
             aRTB.SelectionFont = new Font("Georgia", 11, FontStyle.Bold);
             aRTB.AppendText("3. ΔΙΑΡΚΕΙΑ");
             aRTB.SelectionFont = new Font("Georgia", 11, FontStyle.Regular);
-            aRTB.AppendText(" Η διάρκεια της παρούσας μίσθωσης ορίζεται …………………… Αρχιζει την ………………… ληγει την ………………………..\n\n");
+            aRTB.AppendText(" Η διάρκεια της παρούσας μίσθωσης ορίζεται σε  ..."+eth+"...έτος/έτη Αρχιζει την ..."+startM+"... ληγει την ..."+endM+"...\n\n");
 
             aRTB.SelectionFont = new Font("Georgia", 11, FontStyle.Bold);
             aRTB.AppendText("4. ΕΓΓΥΗΣΗ");

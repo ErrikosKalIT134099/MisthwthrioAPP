@@ -68,8 +68,10 @@ namespace MisthwthrioAppV2
             this.diarkeiaMistTitleLB = new System.Windows.Forms.Label();
             this.enarksiLB = new System.Windows.Forms.Label();
             this.lhxhLB = new System.Windows.Forms.Label();
-            this.startTB = new System.Windows.Forms.TextBox();
             this.endTB = new System.Windows.Forms.TextBox();
+            this.startTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.ethLB = new System.Windows.Forms.Label();
+            this.ethCB = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // datePicker
@@ -103,7 +105,7 @@ namespace MisthwthrioAppV2
             // 
             this.afmLB.AutoSize = true;
             this.afmLB.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.afmLB.Location = new System.Drawing.Point(12, 393);
+            this.afmLB.Location = new System.Drawing.Point(12, 367);
             this.afmLB.Name = "afmLB";
             this.afmLB.Size = new System.Drawing.Size(41, 14);
             this.afmLB.TabIndex = 39;
@@ -111,35 +113,35 @@ namespace MisthwthrioAppV2
             // 
             // afmTB
             // 
-            this.afmTB.Location = new System.Drawing.Point(113, 387);
+            this.afmTB.Location = new System.Drawing.Point(113, 361);
             this.afmTB.Name = "afmTB";
             this.afmTB.Size = new System.Drawing.Size(100, 20);
             this.afmTB.TabIndex = 38;
             // 
             // adtTB
             // 
-            this.adtTB.Location = new System.Drawing.Point(113, 354);
+            this.adtTB.Location = new System.Drawing.Point(113, 328);
             this.adtTB.Name = "adtTB";
             this.adtTB.Size = new System.Drawing.Size(100, 20);
             this.adtTB.TabIndex = 37;
             // 
             // katoikiaMisthwthTB
             // 
-            this.katoikiaMisthwthTB.Location = new System.Drawing.Point(113, 324);
+            this.katoikiaMisthwthTB.Location = new System.Drawing.Point(113, 298);
             this.katoikiaMisthwthTB.Name = "katoikiaMisthwthTB";
             this.katoikiaMisthwthTB.Size = new System.Drawing.Size(208, 20);
             this.katoikiaMisthwthTB.TabIndex = 36;
             // 
             // surnameTB
             // 
-            this.surnameTB.Location = new System.Drawing.Point(113, 296);
+            this.surnameTB.Location = new System.Drawing.Point(113, 270);
             this.surnameTB.Name = "surnameTB";
             this.surnameTB.Size = new System.Drawing.Size(208, 20);
             this.surnameTB.TabIndex = 35;
             // 
             // nameTB
             // 
-            this.nameTB.Location = new System.Drawing.Point(113, 269);
+            this.nameTB.Location = new System.Drawing.Point(113, 243);
             this.nameTB.Name = "nameTB";
             this.nameTB.Size = new System.Drawing.Size(208, 20);
             this.nameTB.TabIndex = 34;
@@ -148,7 +150,7 @@ namespace MisthwthrioAppV2
             // 
             this.xrhshLB.AutoSize = true;
             this.xrhshLB.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrhshLB.Location = new System.Drawing.Point(12, 439);
+            this.xrhshLB.Location = new System.Drawing.Point(12, 413);
             this.xrhshLB.Name = "xrhshLB";
             this.xrhshLB.Size = new System.Drawing.Size(98, 14);
             this.xrhshLB.TabIndex = 33;
@@ -156,7 +158,7 @@ namespace MisthwthrioAppV2
             // 
             // xrhshRTB
             // 
-            this.xrhshRTB.Location = new System.Drawing.Point(12, 470);
+            this.xrhshRTB.Location = new System.Drawing.Point(12, 444);
             this.xrhshRTB.Name = "xrhshRTB";
             this.xrhshRTB.Size = new System.Drawing.Size(309, 58);
             this.xrhshRTB.TabIndex = 32;
@@ -166,7 +168,7 @@ namespace MisthwthrioAppV2
             // 
             this.adtLB.AutoSize = true;
             this.adtLB.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adtLB.Location = new System.Drawing.Point(12, 360);
+            this.adtLB.Location = new System.Drawing.Point(12, 334);
             this.adtLB.Name = "adtLB";
             this.adtLB.Size = new System.Drawing.Size(40, 14);
             this.adtLB.TabIndex = 31;
@@ -176,7 +178,7 @@ namespace MisthwthrioAppV2
             // 
             this.katoikiaMisthwthLB.AutoSize = true;
             this.katoikiaMisthwthLB.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.katoikiaMisthwthLB.Location = new System.Drawing.Point(12, 332);
+            this.katoikiaMisthwthLB.Location = new System.Drawing.Point(12, 306);
             this.katoikiaMisthwthLB.Name = "katoikiaMisthwthLB";
             this.katoikiaMisthwthLB.Size = new System.Drawing.Size(106, 14);
             this.katoikiaMisthwthLB.TabIndex = 30;
@@ -186,7 +188,7 @@ namespace MisthwthrioAppV2
             // 
             this.surnameLB.AutoSize = true;
             this.surnameLB.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.surnameLB.Location = new System.Drawing.Point(12, 298);
+            this.surnameLB.Location = new System.Drawing.Point(12, 272);
             this.surnameLB.Name = "surnameLB";
             this.surnameLB.Size = new System.Drawing.Size(65, 14);
             this.surnameLB.TabIndex = 29;
@@ -196,7 +198,7 @@ namespace MisthwthrioAppV2
             // 
             this.nameLB.AutoSize = true;
             this.nameLB.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameLB.Location = new System.Drawing.Point(12, 272);
+            this.nameLB.Location = new System.Drawing.Point(12, 246);
             this.nameLB.Name = "nameLB";
             this.nameLB.Size = new System.Drawing.Size(57, 14);
             this.nameLB.TabIndex = 28;
@@ -206,7 +208,7 @@ namespace MisthwthrioAppV2
             // 
             this.misthwthsTitleLB.AutoSize = true;
             this.misthwthsTitleLB.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.misthwthsTitleLB.Location = new System.Drawing.Point(12, 232);
+            this.misthwthsTitleLB.Location = new System.Drawing.Point(12, 206);
             this.misthwthsTitleLB.Name = "misthwthsTitleLB";
             this.misthwthsTitleLB.Size = new System.Drawing.Size(133, 16);
             this.misthwthsTitleLB.TabIndex = 27;
@@ -218,7 +220,7 @@ namespace MisthwthrioAppV2
             this.ekmisthotisCB.Items.AddRange(new object[] {
             "Γιωργος Παπαδοπουλος 123456789",
             "νικος παπαδοπουλος 1123456567"});
-            this.ekmisthotisCB.Location = new System.Drawing.Point(12, 162);
+            this.ekmisthotisCB.Location = new System.Drawing.Point(12, 136);
             this.ekmisthotisCB.Name = "ekmisthotisCB";
             this.ekmisthotisCB.Size = new System.Drawing.Size(300, 21);
             this.ekmisthotisCB.TabIndex = 26;
@@ -227,7 +229,7 @@ namespace MisthwthrioAppV2
             // 
             this.ekmisthotisLB.AutoSize = true;
             this.ekmisthotisLB.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ekmisthotisLB.Location = new System.Drawing.Point(12, 130);
+            this.ekmisthotisLB.Location = new System.Drawing.Point(12, 104);
             this.ekmisthotisLB.Name = "ekmisthotisLB";
             this.ekmisthotisLB.Size = new System.Drawing.Size(152, 16);
             this.ekmisthotisLB.TabIndex = 25;
@@ -237,7 +239,7 @@ namespace MisthwthrioAppV2
             // 
             this.tmLB.AutoSize = true;
             this.tmLB.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tmLB.Location = new System.Drawing.Point(669, 269);
+            this.tmLB.Location = new System.Drawing.Point(669, 243);
             this.tmLB.Name = "tmLB";
             this.tmLB.Size = new System.Drawing.Size(25, 14);
             this.tmLB.TabIndex = 53;
@@ -250,14 +252,14 @@ namespace MisthwthrioAppV2
             "1ο",
             "2ο",
             "3ο"});
-            this.orofosCB.Location = new System.Drawing.Point(563, 232);
+            this.orofosCB.Location = new System.Drawing.Point(563, 206);
             this.orofosCB.Name = "orofosCB";
             this.orofosCB.Size = new System.Drawing.Size(100, 21);
             this.orofosCB.TabIndex = 52;
             // 
             // tetMetraTB
             // 
-            this.tetMetraTB.Location = new System.Drawing.Point(563, 266);
+            this.tetMetraTB.Location = new System.Drawing.Point(563, 240);
             this.tetMetraTB.Name = "tetMetraTB";
             this.tetMetraTB.Size = new System.Drawing.Size(100, 20);
             this.tetMetraTB.TabIndex = 51;
@@ -267,7 +269,7 @@ namespace MisthwthrioAppV2
             // 
             this.tetMetraLB.AutoSize = true;
             this.tetMetraLB.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tetMetraLB.Location = new System.Drawing.Point(493, 266);
+            this.tetMetraLB.Location = new System.Drawing.Point(493, 240);
             this.tetMetraLB.Name = "tetMetraLB";
             this.tetMetraLB.Size = new System.Drawing.Size(74, 14);
             this.tetMetraLB.TabIndex = 50;
@@ -277,7 +279,7 @@ namespace MisthwthrioAppV2
             // 
             this.orofosLB.AutoSize = true;
             this.orofosLB.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.orofosLB.Location = new System.Drawing.Point(493, 235);
+            this.orofosLB.Location = new System.Drawing.Point(493, 209);
             this.orofosLB.Name = "orofosLB";
             this.orofosLB.Size = new System.Drawing.Size(57, 14);
             this.orofosLB.TabIndex = 49;
@@ -287,7 +289,7 @@ namespace MisthwthrioAppV2
             // 
             this.euroLB.AutoSize = true;
             this.euroLB.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.euroLB.Location = new System.Drawing.Point(669, 306);
+            this.euroLB.Location = new System.Drawing.Point(669, 280);
             this.euroLB.Name = "euroLB";
             this.euroLB.Size = new System.Drawing.Size(36, 14);
             this.euroLB.TabIndex = 48;
@@ -300,7 +302,7 @@ namespace MisthwthrioAppV2
             this.egguhshCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.egguhshCheckBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.egguhshCheckBox.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.egguhshCheckBox.Location = new System.Drawing.Point(494, 331);
+            this.egguhshCheckBox.Location = new System.Drawing.Point(494, 305);
             this.egguhshCheckBox.Name = "egguhshCheckBox";
             this.egguhshCheckBox.Size = new System.Drawing.Size(188, 18);
             this.egguhshCheckBox.TabIndex = 47;
@@ -310,7 +312,7 @@ namespace MisthwthrioAppV2
             // 
             // misthomaTB
             // 
-            this.misthomaTB.Location = new System.Drawing.Point(563, 299);
+            this.misthomaTB.Location = new System.Drawing.Point(563, 273);
             this.misthomaTB.Name = "misthomaTB";
             this.misthomaTB.Size = new System.Drawing.Size(100, 20);
             this.misthomaTB.TabIndex = 46;
@@ -318,7 +320,7 @@ namespace MisthwthrioAppV2
             // 
             // addressTB
             // 
-            this.addressTB.Location = new System.Drawing.Point(563, 166);
+            this.addressTB.Location = new System.Drawing.Point(563, 140);
             this.addressTB.Name = "addressTB";
             this.addressTB.ReadOnly = true;
             this.addressTB.Size = new System.Drawing.Size(165, 20);
@@ -327,7 +329,7 @@ namespace MisthwthrioAppV2
             // 
             // cityTB
             // 
-            this.cityTB.Location = new System.Drawing.Point(563, 203);
+            this.cityTB.Location = new System.Drawing.Point(563, 177);
             this.cityTB.Name = "cityTB";
             this.cityTB.ReadOnly = true;
             this.cityTB.Size = new System.Drawing.Size(100, 20);
@@ -338,7 +340,7 @@ namespace MisthwthrioAppV2
             // 
             this.misthomaLB.AutoSize = true;
             this.misthomaLB.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.misthomaLB.Location = new System.Drawing.Point(493, 297);
+            this.misthomaLB.Location = new System.Drawing.Point(493, 271);
             this.misthomaLB.Name = "misthomaLB";
             this.misthomaLB.Size = new System.Drawing.Size(64, 14);
             this.misthomaLB.TabIndex = 43;
@@ -348,7 +350,7 @@ namespace MisthwthrioAppV2
             // 
             this.addressLB.AutoSize = true;
             this.addressLB.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addressLB.Location = new System.Drawing.Point(491, 173);
+            this.addressLB.Location = new System.Drawing.Point(491, 147);
             this.addressLB.Name = "addressLB";
             this.addressLB.Size = new System.Drawing.Size(74, 14);
             this.addressLB.TabIndex = 42;
@@ -358,7 +360,7 @@ namespace MisthwthrioAppV2
             // 
             this.cityLB.AutoSize = true;
             this.cityLB.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cityLB.Location = new System.Drawing.Point(491, 204);
+            this.cityLB.Location = new System.Drawing.Point(491, 178);
             this.cityLB.Name = "cityLB";
             this.cityLB.Size = new System.Drawing.Size(44, 14);
             this.cityLB.TabIndex = 41;
@@ -368,7 +370,7 @@ namespace MisthwthrioAppV2
             // 
             this.stoixeiaOikiasLB.AutoSize = true;
             this.stoixeiaOikiasLB.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stoixeiaOikiasLB.Location = new System.Drawing.Point(487, 130);
+            this.stoixeiaOikiasLB.Location = new System.Drawing.Point(487, 104);
             this.stoixeiaOikiasLB.Name = "stoixeiaOikiasLB";
             this.stoixeiaOikiasLB.Size = new System.Drawing.Size(120, 16);
             this.stoixeiaOikiasLB.TabIndex = 40;
@@ -387,7 +389,7 @@ namespace MisthwthrioAppV2
             // 
             // egguhshTB
             // 
-            this.egguhshTB.Location = new System.Drawing.Point(562, 354);
+            this.egguhshTB.Location = new System.Drawing.Point(562, 328);
             this.egguhshTB.Name = "egguhshTB";
             this.egguhshTB.Size = new System.Drawing.Size(100, 20);
             this.egguhshTB.TabIndex = 55;
@@ -398,7 +400,7 @@ namespace MisthwthrioAppV2
             // 
             this.egguhshLB.AutoSize = true;
             this.egguhshLB.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.egguhshLB.Location = new System.Drawing.Point(493, 360);
+            this.egguhshLB.Location = new System.Drawing.Point(493, 334);
             this.egguhshLB.Name = "egguhshLB";
             this.egguhshLB.Size = new System.Drawing.Size(60, 14);
             this.egguhshLB.TabIndex = 56;
@@ -409,7 +411,7 @@ namespace MisthwthrioAppV2
             // 
             this.diarkeiaMistTitleLB.AutoSize = true;
             this.diarkeiaMistTitleLB.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.diarkeiaMistTitleLB.Location = new System.Drawing.Point(487, 393);
+            this.diarkeiaMistTitleLB.Location = new System.Drawing.Point(487, 367);
             this.diarkeiaMistTitleLB.Name = "diarkeiaMistTitleLB";
             this.diarkeiaMistTitleLB.Size = new System.Drawing.Size(150, 16);
             this.diarkeiaMistTitleLB.TabIndex = 57;
@@ -418,7 +420,7 @@ namespace MisthwthrioAppV2
             // enarksiLB
             // 
             this.enarksiLB.AutoSize = true;
-            this.enarksiLB.Location = new System.Drawing.Point(490, 426);
+            this.enarksiLB.Location = new System.Drawing.Point(491, 414);
             this.enarksiLB.Name = "enarksiLB";
             this.enarksiLB.Size = new System.Drawing.Size(48, 13);
             this.enarksiLB.TabIndex = 58;
@@ -427,25 +429,50 @@ namespace MisthwthrioAppV2
             // lhxhLB
             // 
             this.lhxhLB.AutoSize = true;
-            this.lhxhLB.Location = new System.Drawing.Point(493, 455);
+            this.lhxhLB.Location = new System.Drawing.Point(494, 443);
             this.lhxhLB.Name = "lhxhLB";
             this.lhxhLB.Size = new System.Drawing.Size(34, 13);
             this.lhxhLB.TabIndex = 59;
             this.lhxhLB.Text = "Λήξη:";
             // 
-            // startTB
-            // 
-            this.startTB.Location = new System.Drawing.Point(562, 426);
-            this.startTB.Name = "startTB";
-            this.startTB.Size = new System.Drawing.Size(100, 20);
-            this.startTB.TabIndex = 60;
-            // 
             // endTB
             // 
-            this.endTB.Location = new System.Drawing.Point(562, 455);
+            this.endTB.Location = new System.Drawing.Point(563, 443);
             this.endTB.Name = "endTB";
             this.endTB.Size = new System.Drawing.Size(100, 20);
             this.endTB.TabIndex = 61;
+            // 
+            // startTimePicker
+            // 
+            this.startTimePicker.CustomFormat = "dd/MM/yyyy";
+            this.startTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.startTimePicker.Location = new System.Drawing.Point(564, 414);
+            this.startTimePicker.Name = "startTimePicker";
+            this.startTimePicker.Size = new System.Drawing.Size(100, 20);
+            this.startTimePicker.TabIndex = 62;
+            this.startTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // ethLB
+            // 
+            this.ethLB.AutoSize = true;
+            this.ethLB.Location = new System.Drawing.Point(492, 392);
+            this.ethLB.Name = "ethLB";
+            this.ethLB.Size = new System.Drawing.Size(58, 13);
+            this.ethLB.TabIndex = 63;
+            this.ethLB.Text = "Έτος/Έτη";
+            // 
+            // ethCB
+            // 
+            this.ethCB.FormattingEnabled = true;
+            this.ethCB.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.ethCB.Location = new System.Drawing.Point(564, 387);
+            this.ethCB.Name = "ethCB";
+            this.ethCB.Size = new System.Drawing.Size(99, 21);
+            this.ethCB.TabIndex = 64;
             // 
             // MainForm
             // 
@@ -453,8 +480,10 @@ namespace MisthwthrioAppV2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(779, 568);
+            this.Controls.Add(this.ethCB);
+            this.Controls.Add(this.ethLB);
+            this.Controls.Add(this.startTimePicker);
             this.Controls.Add(this.endTB);
-            this.Controls.Add(this.startTB);
             this.Controls.Add(this.lhxhLB);
             this.Controls.Add(this.enarksiLB);
             this.Controls.Add(this.diarkeiaMistTitleLB);
@@ -543,8 +572,10 @@ namespace MisthwthrioAppV2
         private System.Windows.Forms.Label diarkeiaMistTitleLB;
         private System.Windows.Forms.Label enarksiLB;
         private System.Windows.Forms.Label lhxhLB;
-        private System.Windows.Forms.TextBox startTB;
         private System.Windows.Forms.TextBox endTB;
+        private System.Windows.Forms.DateTimePicker startTimePicker;
+        private System.Windows.Forms.Label ethLB;
+        private System.Windows.Forms.ComboBox ethCB;
     }
 }
 
