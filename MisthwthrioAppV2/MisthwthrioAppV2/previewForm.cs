@@ -14,6 +14,13 @@ namespace MisthwthrioAppV2
     {
         string ekmisthwths,mOnoma,mEponymo,mToposKatoikias,mADT;
         string mAfm,adress,city,floor,useM,datepick,startM,endM;
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pdfMerge pdfMerge = new pdfMerge();
+            pdfMerge.pdfMergeMethod("D:/"+mOnoma+mEponymo+".pdf", "D:/2.pdf", "D:/file1and2223.pdf");
+        }
+
         double tetMetra;
         int misthwma,guaranty,eth;
         public previewForm(string ekmisthwth, string onoma, string eponymo, string toposkatoikias, string adt, string afm, string dieuf, string polh, string orof, int misth, int egguhsh, string xrhsh, double tm, string date, int years,string start,string end)
@@ -93,10 +100,10 @@ namespace MisthwthrioAppV2
 
 
 
-            aRTB.SaveFile("D:/awd2.rtf");
+            aRTB.SaveFile("D:/"+mOnoma+mEponymo+".rtf");
 
             aRTB.Width = 700;
-            aRTB.Height = 842;
+            aRTB.Height = 742;
             this.Controls.Add(aRTB);
         }
     }

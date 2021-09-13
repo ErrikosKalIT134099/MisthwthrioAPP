@@ -162,7 +162,7 @@ namespace MisthwthrioAppV2
             this.xrhshRTB.Name = "xrhshRTB";
             this.xrhshRTB.Size = new System.Drawing.Size(309, 58);
             this.xrhshRTB.TabIndex = 32;
-            this.xrhshRTB.Text = "ασδασφασφγδφγερςςε;ςε;ςε;ςε\nασδασδ";
+            this.xrhshRTB.Text = "για την κόρη του μισθωτή .......... φοιτήτριας του ΔΠΘ";
             // 
             // adtLB
             // 
@@ -325,7 +325,7 @@ namespace MisthwthrioAppV2
             this.addressTB.ReadOnly = true;
             this.addressTB.Size = new System.Drawing.Size(165, 20);
             this.addressTB.TabIndex = 45;
-            this.addressTB.Text = "Στύλπωνος Κυριακίδη 17 Α Α\'";
+            this.addressTB.Text = "Παπαδοπούλου 13";
             // 
             // cityTB
             // 
@@ -334,7 +334,7 @@ namespace MisthwthrioAppV2
             this.cityTB.ReadOnly = true;
             this.cityTB.Size = new System.Drawing.Size(100, 20);
             this.cityTB.TabIndex = 44;
-            this.cityTB.Text = "Κομοτηνή";
+            this.cityTB.Text = "θεσσαλονίκη";
             // 
             // misthomaLB
             // 
